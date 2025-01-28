@@ -1,5 +1,7 @@
 const convertButton = document.querySelector(".convert-button")
 const selector = document.querySelector(".currency-selector")
+const currencySelector = document.querySelector(".currency-selector")
+const currencyImage = document.querySelector(".convert-to")
 
 function convertValues() {
     const input = document.querySelector(".input-value").value
@@ -19,4 +21,15 @@ function convertValues() {
     htmlValueToConvert.innerHTML = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(input)
 }
 
+function changeImage() {
+    if(selector.value == "USD"){
+        currencyImage.src = "img/dolar-icon.png"
+    }
+    if(selector.value == "EUR") {
+        currencyImage.src = "img/euro-icon.png"
+    }
+    convertValues()
+}
+
 convertButton.addEventListener("click", convertValues)
+currencySelector.addEventListener("change", changeImage)
