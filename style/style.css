@@ -42,7 +42,6 @@ main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .div-left select, input {
@@ -50,7 +49,8 @@ main {
     height: 50px;
     border: #BD99FF solid 3px;
     border-radius: 5px;
-
+    display: flex;
+    padding-left: 10px;
 }
 
 .right {
@@ -59,6 +59,15 @@ main {
     display: flex;
     flex-direction: column;
     padding: 30px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #convert-button {
@@ -69,4 +78,36 @@ main {
     background-color: #69CC0F;
     color: #FFFFFF;
     font-size: 16pt;
+}
+
+.convert-from, .convert-to {
+    width: 50px;
+    height: 50px;
+}
+
+.arrow {
+    width: 50px;
+    height: 50px;
+}
+
+label {
+    font-size: 12pt;
+    color: #7e7e7e;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+h1 {
+    font-size: 24pt;
+    color: #8648F6;
+}
+
+h2 {
+    font-size: 16pt;
+    color: #69CC0F;
+}
+
+h3 {
+    font-size: 12pt;
+    color: #7e7e7e;
 }
