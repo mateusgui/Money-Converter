@@ -78,6 +78,8 @@ main {
     background-color: #69CC0F;
     color: #FFFFFF;
     font-size: 16pt;
+    cursor: pointer;
+    align-self: center;
 }
 
 .convert-from, .convert-to {
