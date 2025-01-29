@@ -113,3 +113,44 @@ h3 {
     font-size: 12pt;
     color: #7e7e7e;
 }
+
+@media screen and (max-width: 670px) {
+    .conversor {
+        flex-direction: column; /* Torna o layout vertical */
+    }
+
+    .left, .right {
+        width: 100%; /* Ajusta as larguras para 100% */
+        padding: 20px; /* Ajusta o espaçamento interno */
+        box-sizing: border-box; /* Garante que o padding não ultrapasse o tamanho da main */
+        flex-grow: 1; /* Permite que as seções cresçam de forma flexível */
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* Espaçamento vertical entre as divs dentro da left */
+    }
+
+    .div-left select, .div-left input {
+        width: 100%; /* Ajusta o tamanho dos campos */
+    }
+
+    .convert-button {
+        width: 100%; /* Ajusta o botão para preencher a largura disponível */
+    }
+
+    .arrow {
+        margin: 20px 0; /* Adiciona espaçamento entre as seções */
+    }
+
+    main {
+        width: 100%; /* Garante que a main ocupe toda a largura disponível */
+        height: auto; /* Ajusta a altura automaticamente conforme o conteúdo */
+        max-height: 100vh; /* Limita a altura máxima da main para a altura da tela */
+        padding: 20px; /* Ajusta o padding da main */
+        box-sizing: border-box; /* Garante que o padding não ultrapasse o tamanho da main */
+        overflow: auto; /* Adiciona barra de rolagem se o conteúdo ultrapassar a altura */
+    }
+}
+

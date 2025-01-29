@@ -2,6 +2,7 @@ const convertButton = document.querySelector(".convert-button")
 const selector = document.querySelector(".currency-selector")
 const currencySelector = document.querySelector(".currency-selector")
 const currencyImage = document.querySelector(".convert-to")
+const currencyText = document.querySelector(".to-type")
 
 function convertValues() {
     const input = document.querySelector(".input-value").value
@@ -24,9 +25,11 @@ function convertValues() {
 function changeImage() {
     if(selector.value == "USD"){
         currencyImage.src = "img/dolar-icon.png"
+        currencyText.innerHTML = "Dólar"
     }
     if(selector.value == "EUR") {
         currencyImage.src = "img/euro-icon.png"
+        currencyText.innerHTML = "Euro"
     }
     convertValues()
 }
