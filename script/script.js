@@ -36,3 +36,7 @@ function changeImage() {
 
 convertButton.addEventListener("click", convertValues)
 currencySelector.addEventListener("change", changeImage)
+
+
+
+
